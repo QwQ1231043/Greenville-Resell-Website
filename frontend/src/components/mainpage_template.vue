@@ -119,7 +119,7 @@ export default {
     const fetchUser = async () => {
       if (!isAuthenticated.value) return;
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/get_current_user`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/get_current_user/`);
         user.value = response.data;
       } catch (error) {
         console.error("Error fetching user data:", error);
