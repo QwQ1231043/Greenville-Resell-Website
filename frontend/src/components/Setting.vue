@@ -116,7 +116,7 @@ const updateProfile = async () => {
     user.value.avatar = `${user.value.avatar}?t=${new Date().getTime()}`;
   } catch (error) {
     console.error("Error updating profile:", error);
-    errorMessage.value = error.response?.data?.error || "❌ Failed to update profile.";
+    errorMessage.value = error.response?.data?.error || "❌Failed to update profile.";
   }
 };
 
