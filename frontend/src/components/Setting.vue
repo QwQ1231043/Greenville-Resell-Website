@@ -66,7 +66,7 @@ const user = ref({
   avatar: ''
 });
 
-const defaultAvatar = `${import.meta.env.VITE_API_URL}/media/avatars/default.jpeg`; // 默认头像路径
+const defaultAvatar = `${import.meta.env.VITE_API_URL}/media/avatars/default.jpeg/`; // 默认头像路径
 const selectedAvatar = ref(null);
 const errorMessage = ref('');
 const successMessage = ref('');
