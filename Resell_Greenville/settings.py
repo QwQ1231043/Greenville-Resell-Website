@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # 📌 安全设置
 SECRET_KEY = 'django-insecure-94+9^m4cdoio$q7^)*&wm3r(g=ruy%il$^i4-*uu#wx_o0)i32'
 DEBUG = True
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "54.91.192.211"]
 
 # 📌 应用列表
 INSTALLED_APPS = [
@@ -48,6 +48,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8080",
     "http://localhost:5173",  # Vite 开发环境
     "http://127.0.0.1:5173",
+        "http://54.91.192.211",
 ]
 
 # 📌 允许跨域携带 Cookie（必须）
@@ -65,6 +66,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:8080",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "http://54.91.192.211",
 ]
 
 CORS_ALLOW_HEADERS = [
