@@ -74,7 +74,15 @@ const successMessage = ref('');
 // ✅ 获取当前用户信息
 const fetchUser = async () => {
   try {
-    const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/get_current_user/`);
+    const response = await axios.get(
+      `${import.meta.env.VITE_API_URL}/user/get_current_user/`,
+      {
+        headers: {
+          'Accept': 'application/json'
+        },
+        withCredentials: true
+      }
+    );
     user.value = response.data;
   } catch (error) {
     console.error("Error fetching user data:", error);
