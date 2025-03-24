@@ -14,10 +14,11 @@ import message from '../components/message.vue'
 import message_detail from '../components/message_detail.vue'
 import donation from '../components/donation.vue'
 import reset_password from '../components/reset_password.vue'
+import Setting2 from "../components/Setting2.vue";
 const routes = [
   { path: '/', component: Home },
   { path: '/home', component: Home },
-  { path: '/setting', component: Setting },
+  { path: '/setting', component: Setting2 },
   { path: '/merchandise', component: MerchandiseList },
       { path: '/register', component: register },
       { path: '/login', component: login },
