@@ -53,5 +53,3 @@ This project demonstrates end-to-end development skills, including frontend desi
 
 ---
 
-## 📂 Project Structure
-
